@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan 26 13:28:33 2024
+# Process ID: 3856
+# Current directory: C:/Users/Joel.Bryant/Vivado code/ece281-ice2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15428 C:\Users\Joel.Bryant\Vivado code\ece281-ice2\halfAdder.xpr
+# Log file: C:/Users/Joel.Bryant/Vivado code/ece281-ice2/vivado.log
+# Journal file: C:/Users/Joel.Bryant/Vivado code/ece281-ice2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder.xpr}
+update_compile_order -fileset sources_1
+config_webtalk -user on
+set_property -name {xsim.simulate.runtime} -value {50ns} -objects [get_filesets sim_1]
+update_ip_catalog
+launch_simulation
+source halfAdder_tb.tcl
+save_wave_config {C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder_tb_behav.wcfg}}
+set_property xsim.view {{C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder_tb_behav.wcfg}} [get_filesets sim_1]
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

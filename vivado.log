@@ -1,0 +1,145 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan 26 13:28:33 2024
+# Process ID: 3856
+# Current directory: C:/Users/Joel.Bryant/Vivado code/ece281-ice2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15428 C:\Users\Joel.Bryant\Vivado code\ece281-ice2\halfAdder.xpr
+# Log file: C:/Users/Joel.Bryant/Vivado code/ece281-ice2/vivado.log
+# Journal file: C:/Users/Joel.Bryant/Vivado code/ece281-ice2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder.xpr}
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+config_webtalk -user on
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Joel.Bryant/Vivado code/ece281-ice2/src/hdl/halfAdder_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Joel.Bryant/Vivado code/ece281-ice2/src/hdl/halfAdder.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property -name {xsim.simulate.runtime} -value {50ns} -objects [get_filesets sim_1]
+update_ip_catalog
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Joel.Bryant/Vivado code/ece281-ice2/src/hdl/halfAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity halfAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Joel.Bryant/Vivado code/ece281-ice2/src/hdl/halfAdder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity halfAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto fbc7280290d34ac2b9a6f16e037356a5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot halfAdder_tb_behav xil_defaultlib.halfAdder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture halfadder_arch of entity xil_defaultlib.halfAdder [halfadder_default]
+Compiling architecture test_bench of entity xil_defaultlib.halfadder_tb
+Built simulation snapshot halfAdder_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Joel.Bryant/Vivado -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/Joel.Bryant/Vivado" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 28 13:57:06 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 852.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "halfAdder_tb_behav -key {Behavioral:sim_1:Functional:halfAdder_tb} -tclbatch {halfAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source halfAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'halfAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 865.633 ; gain = 13.461
+save_wave_config {C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder_tb_behav.wcfg}}
+set_property xsim.view {{C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder_tb_behav.wcfg}} [get_filesets sim_1]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: halfAdder
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 985.305 ; gain = 109.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'halfAdder' [C:/Users/Joel.Bryant/Vivado code/ece281-ice2/src/hdl/halfAdder.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'halfAdder' (1#1) [C:/Users/Joel.Bryant/Vivado code/ece281-ice2/src/hdl/halfAdder.vhd:66]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1039.250 ; gain = 163.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1039.250 ; gain = 163.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1039.250 ; gain = 163.922
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Joel.Bryant/Vivado code/ece281-ice2/src/hdl/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Joel.Bryant/Vivado code/ece281-ice2/src/hdl/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1364.176 ; gain = 488.848
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1364.176 ; gain = 488.848
+launch_runs synth_1 -jobs 4
+[Sun Jan 28 14:10:39 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Joel.Bryant/Vivado code/ece281-ice2/halfAdder.runs/synth_1/runme.log
